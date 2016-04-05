@@ -66,6 +66,13 @@
     -ms-flex-wrap: $type;
     flex-wrap: $type;
 }
+@mixin flex-align-items-center {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+}
 
 /* Animation Mixins */
 @mixin transition($val, $timeInt) {

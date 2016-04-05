@@ -57,31 +57,41 @@ h3 {
 
 		// Home Page Sections
 		section {
-			padding: 48px 48px;
+			@include flex-display;
+			@include justify-content(center);
+			@include flex-align-items(center);
+			@include flex-wrap(wrap);
+			@include flex-align-items-center;
+			height: 600px;
+			padding: 50px 50px;
+			margin: 100px 0px;
 
 			div.section-content {	
-				height: 300px;	
-				width: 60%;
+				height: auto;	
+				width: 450px;
 
 				div.section-text {
-					margin:0 auto;
-					width:350px;
+					margin:0 auto;					
 				}
+			}
+
+			div.section-image {
+				height: 100%;
+				width: 50%;
+				min-width: 450px;
+				margin-left: 50px;
+				border: 1px solid #EFEFEF;
+				border-radius: 5px;
+				background-size: cover;
 			}
 		}
 
 		section#birthday-hero {
-			@include flex-display;
 			@include flex-direction-row;
-			@include justify-content(center);
-			@include flex-align-items(center);
-			@include flex-wrap(wrap);
-
 			height: 100%;
 			
 			div.section-content {	
 				height: 300px;	
-				width: 550px;
 			}
 		}
 
@@ -94,6 +104,9 @@ h3 {
 					margin: 0;
 				}
 			}
+			div.section-image {
+				background-image: url('../images/image1.JPG');
+			}
 		}
 
 		section#birthday-features {
@@ -102,6 +115,12 @@ h3 {
 
 			div.section-content {
 
+			}
+
+			div.section-image {
+				background-image: url('../images/image2.JPG');
+				margin-left: 0%;
+				margin-right: 50px;
 			}
 		}
 
@@ -113,6 +132,10 @@ h3 {
 				ul {
 					list-style-position: inside;
 				}
+			}
+
+			div.section-image {
+				background-image: url('../images/image3.JPG');
 			}
 		}
 
