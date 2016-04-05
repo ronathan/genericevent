@@ -1,0 +1,135 @@
+@import "mixins";
+
+* {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+h1 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 4em;
+}
+
+h2 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 2.35em;
+}
+
+h3 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 1.85em;
+}
+
+.container {
+
+	@include flex-display;
+	@include flex-direction-column;
+	width: 100%;
+	main {
+
+		@include flex-display;
+		@include flex-direction-column;
+		@include justify-content(center);
+
+		// Directions for text
+		.centered {
+			text-align: center;
+		}
+
+		.left {
+			text-align: left;
+		}
+
+		.right {
+			text-align: right;
+		}
+
+		// Home Page Sections
+		section {
+			padding: 48px 48px;
+
+			div.section-content {	
+				height: 300px;	
+				width: 60%;
+
+				div.section-text {
+					margin:0 auto;
+					width:350px;
+				}
+			}
+		}
+
+		section#birthday-hero {
+			@include flex-display;
+			@include flex-direction-row;
+			@include justify-content(center);
+			@include flex-align-items(center);
+			@include flex-wrap(wrap);
+
+			height: 100%;
+			
+			div.section-content {	
+				height: 300px;	
+				width: 550px;
+			}
+		}
+
+		section#birthday-landing {
+			@include flex-display;
+			@include flex-direction-row;
+
+			div.section-content {
+				div.section-text {
+					margin: 0;
+				}
+			}
+		}
+
+		section#birthday-features {
+			@include flex-display;
+			@include flex-direction-row-reverse;
+
+			div.section-content {
+
+			}
+		}
+
+		section#birthday-details {
+			@include flex-display;
+			@include flex-direction-row;
+
+			div.section-content {
+				ul {
+					list-style-position: inside;
+				}
+			}
+		}
+
+		section#birthday-closing {
+			@include flex-display;
+			@include flex-direction-column;
+			@include justify-content(center);
+			@include flex-align-items(center);
+			@include flex-wrap(wrap);
+
+			div.section-content {
+				div.section-text {
+					margin: 0 auto;
+					width: 350px;
+				}
+			}
+		}
+
+	}
+}
