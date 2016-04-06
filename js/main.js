@@ -29,6 +29,6 @@
 		handler: function(direction) {
 			$('section#birthday-closing .section-content').removeClass("hidden").addClass("animated fadeInUp");
 		},
-		offset: "60%"
+		offset: "20%"
 	});
 })();
