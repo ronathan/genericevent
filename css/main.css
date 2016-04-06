@@ -203,7 +203,9 @@ h3 {
     .container main section div.section-image {
       margin: 20px 0;
       height: 400px;
-      width: 80%; } }
+      width: 80%; }
+  .container main section#birthday-hero {
+    margin: 0px; } }
 @media (max-width: 699px) {
   .container main section {
     display: none !important; }
