@@ -84,7 +84,7 @@ h3 {
       -ms-flex-align: center;
       -ms-grid-row-align: center;
       align-items: center;
-      height: 600px;
+      height: 500px;
       padding: 50px 50px;
       margin: 100px 0px; }
       .container main section div.section-content {
@@ -148,6 +148,7 @@ h3 {
       flex-direction: row-reverse; }
       .container main section#birthday-features div.section-image {
         background-image: url("../images/image2.JPG");
+        background-position: 0 -50px;
         margin-left: 0%;
         margin-right: 50px; }
     .container main section#birthday-details {
